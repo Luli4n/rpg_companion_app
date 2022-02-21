@@ -1,0 +1,131 @@
+<body>
+    <header class="header my-3">
+        <h1>ZARZĄDZANIE ELEMENTAMI</h1>
+    </header>
+    <div class="w-75 maindiv">
+        <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+            <li [ngbNavItem]="1">
+            <a ngbNavLink>Muzyka</a>
+            <ng-template ngbNavContent>
+                <div class="upload m-3 d-inline-block">Dodaj własną muzykę</div>
+                
+                <form [formGroup]="checkoutForm" (ngSubmit)="onSubmitMusic()" class="w-50 d-inline-block m-3">
+                    <div class="mb-2">
+                      <label for="name">Nazwa: </label>
+                      <input id="musicname" type="text" formControlName="name">
+                    </div>
+                    <div>
+                      <label for="tags">Tagi: </label>
+                      <input id="musictags" type="text" formControlName="tags">
+                    </div>
+                    <button class="primarybutton mt-3" type="submit">Dodaj</button>
+                </form>
+
+                <div class="elements-overview">
+                    <h2>PRZEGLĄD</h2>
+                    <table>
+                        <tr *ngFor="let elem of elems">
+                            <td class="w-50">{{elem.name}}</td>
+                            <td>odtwórz</td>
+                            <td class="w-25">usuń</td>
+                            <td class="w-25">edycja</td>
+                        </tr>
+                    </table>
+                </div>
+            </ng-template>
+            </li>
+            <li [ngbNavItem]="2">
+            <a ngbNavLink>Dźwięki</a>
+            <ng-template ngbNavContent>
+                <div class="upload m-3 d-inline-block">Dodaj dżwięk</div>
+                
+                <form [formGroup]="checkoutForm" (ngSubmit)="onSubmitSound()" class="w-50 d-inline-block m-3">
+                    <div class="mb-2">
+                      <label for="name">Nazwa: </label>
+                      <input id="soundname" type="text" formControlName="name">
+                    </div>
+                    <div>
+                      <label for="tags">Tagi: </label>
+                      <input id="soundtags" type="text" formControlName="tags">
+                    </div>
+                    <button class="primarybutton mt-3" type="submit">Dodaj</button> 
+                </form>
+
+                <div class="elements-overview">
+                    <h2>PRZEGLĄD</h2>
+                    <table>
+                        <tr *ngFor="let elem of elems">
+                            <td class="w-50">{{elem.name}}</td>
+                            <td>odtwórz</td>
+                            <td class="w-25">usuń</td>
+                            <td class="w-25">edycja</td>
+                        </tr>
+                    </table>
+                </div>
+            </ng-template>
+            </li>
+            <li [ngbNavItem]="3">
+            <a ngbNavLink>Tło</a>
+            <ng-template ngbNavContent>
+                <div class="upload m-3 d-inline-block">Dodaj własne tlo</div>
+                
+                <form [formGroup]="checkoutForm" (ngSubmit)="onSubmitBackground()" class="w-50 d-inline-block m-3">
+                    <div class="mb-2">
+                      <label for="name">Nazwa: </label>
+                      <input id="backgroundname" type="text" formControlName="name">
+                    </div>
+                    <div>
+                      <label for="tags">Tagi: </label>
+                      <input id="backgroundtags" type="text" formControlName="tags">
+                    </div>
+                    <button class="primarybutton mt-3" type="submit">Dodaj</button>
+                </form>
+
+                <div class="elements-overview">
+                    <h2>PRZEGLĄD</h2>
+                    <table>
+                        <tr *ngFor="let elem of elems">
+                            <td class="w-50">{{elem.name}}</td>
+                            <td>podejrzyj</td>
+                            <td class="w-25">usuń</td>
+                            <td class="w-25">edycja</td>
+                        </tr>
+                    </table>
+                </div>
+            </ng-template>
+            </li>
+            <li [ngbNavItem]="4">
+                <a ngbNavLink>Ikony</a>
+                <ng-template ngbNavContent>
+                    <div class="upload m-3 d-inline-block">Dodaj ikonę</div>
+                
+                <form [formGroup]="checkoutForm" (ngSubmit)="onSubmitIcon()" class="w-50 d-inline-block m-3">
+                    <div class="mb-2">
+                      <label for="name">Nazwa: </label>
+                      <input id="iconname" type="text" formControlName="name">
+                    </div>
+                    <div>
+                      <label for="tags">Tagi: </label>
+                      <input id="icontags" type="text" formControlName="tags">
+                    </div>
+                    <button class="primarybutton mt-3" type="submit">Dodaj</button>
+                </form>
+
+                <div class="elements-overview">
+                    <h2>PRZEGLĄD</h2>
+                    <table>
+                        <tr *ngFor="let elem of elems">
+                            <td class="w-50">{{elem.name}}</td>
+                            <td>podejrzyj</td>
+                            <td class="w-25">usuń</td>
+                            <td class="w-25">edycja</td>
+                        </tr>
+                    </table>
+                </div>
+                </ng-template>
+            </li>
+        </ul>
+        
+        <div [ngbNavOutlet]="nav" class="mt-2"></div>
+    </div>
+</body>
