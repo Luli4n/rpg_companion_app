@@ -1,0 +1,66 @@
+.settingsbar{
+    width: 40%;
+    float: left;
+    min-height: 80vh;
+}
+
+.maptab{
+    width: 60%;
+    overflow: hidden;
+    min-height: 80vh;
+    padding-left: 5px;
+}
+
+.mapfield{
+    border-style: solid;
+    border-color: blue;
+    margin-top: 90px;
+    height: 50vh;
+}
+
+.commentsfield{
+    height: 15vh;
+    border-style: solid;
+    border-color: yellow;
+}
+
+.settingtab{
+    height: 19vh;
+    border-style: solid;
+    border-color: black;
+}
+
+.title{
+    border-bottom: solid;
+    padding-left: 3px;
+    height: 20%;
+}
+
+.elemdiv{
+    width: 50px;
+    height: 14vh;
+    border-style: solid;
+    border-color: red;
+    float: left;
+    display: block;
+}
+
+.text{
+    float: left;
+    margin-right: 60px;
+}
+
+.exampleinput{
+    border-style: solid;
+    border-color: black;
+    width: 250px;
+    float: left;
+    margin-right: 20px;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.allcategory{
+    font-size: 10px;
+    width: 100px;
+}
