@@ -1,8 +1,8 @@
-<body>
+<div class="maindiv">
     <header class="header my-3">
         <h1>ZARZĄDZANIE ELEMENTAMI</h1>
     </header>
-    <div class="w-75 maindiv">
+    <div class="w-75 centraldiv">
         <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
             <li [ngbNavItem]="1">
             <a ngbNavLink>Muzyka</a>
@@ -128,4 +128,4 @@
         
         <div [ngbNavOutlet]="nav" class="mt-2"></div>
     </div>
-</body>
+</div>

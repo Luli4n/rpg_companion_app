@@ -1,0 +1,59 @@
+<div class="maindiv">
+    <header class="header my-2">
+        <h1>NAZWA SCHEMATU</h1>
+    </header>
+    <div class="fulldiv">
+        <div class="settingsbar">
+            <h2>NAZWA GRACZA</h2>
+            <div class="settingtab">
+                <div class="title">
+                    <div class="text mr-3">MUZYKA</div>
+                    <div class="exampleinput">wyszukaj</div>
+                    <div class="checkboxfield">
+                        <input type="checkbox" id="allmusic" name="allmusic"
+                               checked>
+                        <label class="allcategory" for="allmusic">Dodaj</label>
+                    </div>
+                </div>
+                <div class="slider mt-1">
+                    <div *ngFor="let elem of elems">
+                        <div class="elemdiv">{{elem.name}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="settingtab border-top-0">
+                <div class="title">
+                    TŁO
+                </div>
+                <div class="slider">
+
+                </div>
+            </div>
+            <div class="settingtab border-top-0">
+                <div class="title">
+                    DŹWIĘK 
+                </div>
+                <div class="slider">
+
+                </div>
+            </div>
+            <div class="settingtab border-top-0">
+                <div class="title">
+                    IKONA
+                </div>
+                <div class="slider">
+
+                </div>
+            </div>
+        </div>
+        <div class="maptab">
+            <div class="mapfield">
+                mapa gry
+            </div>
+            <div class="commentsfield mt-2">
+                opcja pisania komentarzy
+            </div>
+            - - kolejny gracz??
+        </div>
+    </div>
+</div>
