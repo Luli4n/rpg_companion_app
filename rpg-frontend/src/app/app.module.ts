@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ElementsManagementComponent } from './elements-management/elements-management.component';
 import { UserPanelComponent } from './user-panel/user-panel.component';
+import { ManagementDuringGameComponent } from './management-during-game/management-during-game.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { UserPanelComponent } from './user-panel/user-panel.component';
     AppComponent,
     ElementsManagementComponent,
     UserPanelComponent,
+    ManagementDuringGameComponent,
   ],
   imports: [
     BrowserModule,
