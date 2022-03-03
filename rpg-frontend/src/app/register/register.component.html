@@ -1,0 +1,27 @@
+<div class="maindiv">
+    <header class="header my-3">
+        <h1>ZARZĄDZANIE ELEMENTAMI</h1>
+    </header>
+    <div class="w-75 centraldiv">
+        <div class="login">
+            <h3 class="p-3 d-flex justify-content-center">Zarejestruj</h3>
+            <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+                <div class="p-3">
+                    <label for="name">Nazwa użytkownika: </label><br>
+                    <input class="form-control" id="username" type="text" formControlName="name">
+                </div>
+                <div class="p-3">
+                    <label for="password">Hasło: </label><br>
+                    <input class="form-control" id="password" type="password" formControlName="password">
+                </div>
+                <div class="p-3">
+                    <label for="rep_password">Powtórz hasło: </label><br>
+                    <input class="form-control" id="rep_password" type="password" formControlName="rep_password">
+                </div>
+                <div class="p-3">
+                    <button class="primarybutton" type="submit">Zarejestruj</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
