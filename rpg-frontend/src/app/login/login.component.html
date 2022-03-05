@@ -1,0 +1,27 @@
+<div class="maindiv">
+    <header class="header my-3">
+        <h1>ZARZĄDZANIE ELEMENTAMI</h1>
+    </header>
+    <div class="w-75 centraldiv">
+        <div class="login">
+            <h3 class="p-3 d-flex justify-content-center">Zaloguj</h3>
+            <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+                <div class="p-3">
+                    <label for="name">Nazwa użytkownika: </label><br>
+                    <input class="form-control" id="username" type="text" formControlName="name">
+                </div>
+                <div class="p-3">
+                    <label for="password">Hasło: </label><br>
+                    <input class="form-control" id="password" type="password" formControlName="password">
+                </div>
+                <div class="p-3">
+                    <button class="primarybutton" type="submit">Zaloguj</button>
+                </div>
+            </form>
+            <br>
+            <div class="p-3">
+                <a [routerLink]="['../register']">Nie masz konta?<br> Zarejestruj się ☻</a>
+            </div>
+        </div>
+    </div>
+</div>

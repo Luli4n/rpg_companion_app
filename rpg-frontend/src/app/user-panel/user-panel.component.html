@@ -1,23 +1,23 @@
-<body>
+<div class="maindiv">
     <header class="header my-3">
-        <h1>Witaj xyz</h1>
+        <h1 [innerHTML]="welcomeString"></h1>
     </header>
-    <div class="w-75 maindiv">
+    <div class="w-75 centraldiv">
         <div class="menu">
-        <div class="menu-elem" [routerLink]="['../manage.elements']">
-            <h3>
-                <a>
-                    Dodaj Elementy
-                </a>
-            </h3>
-        </div>
-        <div class="menu-elem" [routerLink]="['../manage.elements']">
-            <h3>
-                <a>
-                    Przeglądaj Rozgrywki
-                </a>
-            </h3>
+            <div class="menu-elem" [routerLink]="['../manage.elements']">
+                <h3>
+                    <a>
+                        Dodaj Elementy
+                    </a>
+                </h3>
+            </div>
+            <div class="menu-elem" [routerLink]="['../manage.elements']">
+                <h3>
+                    <a>
+                        Przeglądaj Rozgrywki
+                    </a>
+                </h3>
+            </div>
         </div>
     </div>
-    </div>
-</body>
+</div>

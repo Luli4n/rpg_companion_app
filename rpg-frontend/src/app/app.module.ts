@@ -8,7 +8,8 @@ import { ElementsManagementComponent } from './elements-management/elements-mana
 import { UserPanelComponent } from './user-panel/user-panel.component';
 import { ManagementDuringGameComponent } from './management-during-game/management-during-game.component';
 import { CreatingGameTemplateComponent } from './creating-game-template/creating-game-template.component';
-
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,8 @@ import { CreatingGameTemplateComponent } from './creating-game-template/creating
     UserPanelComponent,
     ManagementDuringGameComponent,
     CreatingGameTemplateComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +29,8 @@ import { CreatingGameTemplateComponent } from './creating-game-template/creating
     RouterModule.forRoot([
       { path: '', component: UserPanelComponent },
       { path: 'manage.elements', component: ElementsManagementComponent },
+      { path: 'login', component: LoginComponent },
+      { path: 'register', component: RegisterComponent },
     ])
   ],
   providers: [],
