@@ -1,0 +1,87 @@
+<div class="maindiv">
+    <header class="header my-3">
+        <h1>TWORZENIE SCHEMATU</h1>
+    </header>
+    <div class="w-75 centraldiv">
+        <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+            <li [ngbNavItem]="1">
+            <a ngbNavLink>Muzyka</a>
+            <ng-template ngbNavContent>
+                <label class="m-3">Dodane</label>
+                <div class="elements-overview">
+                    <div class="text-lowercase">Wybrano: 0</div>
+                </div>
+                <label class="m-3">Moje pliki</label>
+                <div class="exampleinput my-3 mr-5">wyszukaj</div>
+                <div class="elements-overview mt-3">
+                    <table class="w-100">
+                        <tr *ngFor="let elem of elems">
+                            <td class="w-75 text-start">{{elem.name}}</td>
+                            <td class="w-50">dodaj</td>
+                        </tr>
+                    </table>
+                </div>
+            </ng-template>
+            </li>
+            <li [ngbNavItem]="2">
+            <a ngbNavLink>Dźwięki</a>
+            <ng-template ngbNavContent>
+                <label class="m-3">Dodane</label>
+                <div class="elements-overview">
+                    <div class="text-lowercase">Wybrano: 0</div>
+                </div>
+                <label class="m-3">Moje pliki</label>
+                <div class="exampleinput my-3 mr-5">wyszukaj</div>
+                <div class="elements-overview mt-3">
+                    <table class="w-100">
+                        <tr *ngFor="let elem of elems">
+                            <td class="w-75 text-start">{{elem.name}}</td>
+                            <td class="w-50">dodaj</td>
+                        </tr>
+                    </table>
+                </div>
+            </ng-template>
+            </li>
+            <li [ngbNavItem]="3">
+            <a ngbNavLink>Tło</a>
+            <ng-template ngbNavContent>
+                <label class="m-3">Dodane</label>
+                <div class="elements-overview">
+                    <div class="text-lowercase">Wybrano: 0</div>
+                </div>
+                <label class="m-3">Moje pliki</label>
+                <div class="exampleinput my-3 mr-5">wyszukaj</div>
+                <div class="elements-overview mt-3">
+                    <table class="w-100">
+                        <tr *ngFor="let elem of elems">
+                            <td class="w-75 text-start">{{elem.name}}</td>
+                            <td class="w-50">dodaj</td>
+                        </tr>
+                    </table>
+                </div>
+            </ng-template>
+            </li>
+            <li [ngbNavItem]="4">
+                <a ngbNavLink>Ikony</a>
+                <ng-template ngbNavContent>
+                    <label class="m-3">Dodane</label>
+                <div class="elements-overview">
+                    <div class="text-lowercase">Wybrano: 0</div>
+                </div>
+                <label class="m-3">Moje pliki</label>
+                <div class="exampleinput my-3 mr-5">wyszukaj</div>
+                <div class="elements-overview mt-3">
+                    <table class="w-100">
+                        <tr *ngFor="let elem of elems">
+                            <td class="w-75 text-start">{{elem.name}}</td>
+                            <td class="w-50">dodaj</td>
+                        </tr>
+                    </table>
+                </div>
+                </ng-template>
+            </li>
+        </ul>
+        
+        <div [ngbNavOutlet]="nav" class="mt-2"></div>
+    </div>
+</div>
