@@ -41,3 +41,8 @@ td{
 label{
     width: 70px;
 }
+
+a:any-link{
+    color:sienna
+}
+
