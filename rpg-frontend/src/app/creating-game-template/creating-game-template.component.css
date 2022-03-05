@@ -1,0 +1,17 @@
+.nav-tabs .nav-link-active, .nav-tabs .nav-link{
+    color: black;
+    background-color: rgb(220, 205, 187);
+}
+
+.nav-tabs .nav-item{
+    width: 25%;
+    text-align: center;
+}
+
+.exampleinput{
+    border-style: solid;
+    border-color: black;
+    width: 250px;
+    float: right;
+    margin-right: 20px;
+}

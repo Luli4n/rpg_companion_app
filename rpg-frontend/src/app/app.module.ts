@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ElementsManagementComponent } from './elements-management/elements-management.component';
 import { UserPanelComponent } from './user-panel/user-panel.component';
 import { ManagementDuringGameComponent } from './management-during-game/management-during-game.component';
+import { CreatingGameTemplateComponent } from './creating-game-template/creating-game-template.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
@@ -16,6 +17,7 @@ import { RegisterComponent } from './register/register.component';
     ElementsManagementComponent,
     UserPanelComponent,
     ManagementDuringGameComponent,
+    CreatingGameTemplateComponent,
     LoginComponent,
     RegisterComponent
   ],
