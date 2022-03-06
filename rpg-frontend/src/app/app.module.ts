@@ -10,6 +10,7 @@ import { ManagementDuringGameComponent } from './management-during-game/manageme
 import { CreatingGameTemplateComponent } from './creating-game-template/creating-game-template.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { BrowsingGameTemplatesComponent } from './browsing-game-templates/browsing-game-templates.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RegisterComponent } from './register/register.component';
     ManagementDuringGameComponent,
     CreatingGameTemplateComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    BrowsingGameTemplatesComponent
   ],
   imports: [
     BrowserModule,
