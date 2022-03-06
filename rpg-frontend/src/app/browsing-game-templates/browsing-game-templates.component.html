@@ -1,14 +1,15 @@
 <div class="maindiv">
+    <div class="menubutton" [routerLink]="['../admin.panel']">Menu</div><br>
     <header class="header my-3">
         <h1>Moje schematy</h1>
     </header>
     <div class="w-75 centraldiv">
-        <button class="primarybutton mt-3">Dodaj nową</button>
+        <button class="primarybutton mt-3" [routerLink]="['../create.game']">Dodaj nową</button>
         <div class="elements-overview mt-3">
             <table class="w-100">
                 <tr *ngFor="let elem of elems">
                     <td class="w-50">{{elem.name}}</td>
-                    <td class="w-25">rozpocznij</td>
+                    <td class="w-25" role='button' [routerLink]="['../waiting.room']">rozpocznij</td>
                     <td>usuń</td>
                     <td>edycja</td>
                 </tr>

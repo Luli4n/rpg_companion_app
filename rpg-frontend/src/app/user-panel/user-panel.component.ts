@@ -11,12 +11,11 @@ import { elems } from '../../sample_elem';
   styleUrls: ['./user-panel.component.css']
 })
 export class UserPanelComponent implements OnInit {
-  username='mordeczko';
+  username='TwojaNazwa';
   welcomeString="Witaj ";
   constructor() { }
 
   ngOnInit(): void {
-    //tu trzeba zrobić zczytywanie username
     this.welcomeString=this.welcomeString.concat(this.username);
   }
 

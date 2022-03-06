@@ -1,8 +1,5 @@
 <div class="maindiv">
-    <header class="header my-3">
-        <h1>ZARZĄDZANIE ELEMENTAMI</h1>
-    </header>
-    <div class="w-75 centraldiv">
+    <div class="w-75 mt-5 centraldiv">
         <div class="login">
             <h3 class="p-3 d-flex justify-content-center">Zaloguj</h3>
             <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
@@ -15,7 +12,7 @@
                     <input class="form-control" id="password" type="password" formControlName="password">
                 </div>
                 <div class="p-3">
-                    <button class="primarybutton" type="submit">Zaloguj</button>
+                    <button [routerLink]="['../admin.panel']" class="primarybutton" type="submit">Zaloguj</button>
                 </div>
             </form>
             <br>

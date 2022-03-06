@@ -11,6 +11,7 @@ import { CreatingGameTemplateComponent } from './creating-game-template/creating
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { BrowsingGameTemplatesComponent } from './browsing-game-templates/browsing-game-templates.component';
+import { WaitingRoomComponent } from './waiting-room/waiting-room.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { BrowsingGameTemplatesComponent } from './browsing-game-templates/browsi
     CreatingGameTemplateComponent,
     LoginComponent,
     RegisterComponent,
-    BrowsingGameTemplatesComponent
+    BrowsingGameTemplatesComponent,
+    WaitingRoomComponent
   ],
   imports: [
     BrowserModule,
@@ -29,10 +31,14 @@ import { BrowsingGameTemplatesComponent } from './browsing-game-templates/browsi
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: UserPanelComponent },
+      { path: 'admin.panel', component: UserPanelComponent },
       { path: 'manage.elements', component: ElementsManagementComponent },
-      { path: 'login', component: LoginComponent },
+      { path: '', component: LoginComponent },
       { path: 'register', component: RegisterComponent },
+      { path: 'browse.games', component: BrowsingGameTemplatesComponent },
+      { path: 'create.game', component: CreatingGameTemplateComponent },
+      { path: 'game.panel', component: ManagementDuringGameComponent },
+      { path: 'waiting.room', component: WaitingRoomComponent },
     ])
   ],
   providers: [],

@@ -1,0 +1,31 @@
+<div class="maindiv">
+    <div class="menubutton" [routerLink]="['../admin.panel']">Menu</div><br>
+    <header class="header my-3">
+        <h1>Gracze: </h1>
+    </header>
+    <div class="w-75 centraldiv">
+        <div class="elements-overview mt-3">
+            <table class="w-100">
+                <tr *ngFor="let elem of elems">
+                    <td class="w-50">{{elem.name}}</td>
+                </tr>
+            </table>
+        </div>
+        <form class="h-150" [formGroup]="checkoutForm" (ngSubmit)="onSubmitUser()">
+            <div class="row">
+                <div class="p-3 col-md-1">
+                    <label for="playername">Nazwa gracza: </label><br>
+                    
+                </div>
+            <div class="p-3 col-md-2">
+                <input  id="playername" type="text" formControlName="playername">
+            </div>
+            <div class="p-3 col-md-2">
+                <button class="primarybutton" type="submit">Dodaj Gracza</button>
+            </div>
+        </div>
+        </form>
+        <button class="primarybutton mt-3" [routerLink]="['../game.panel']">Rozpocznij Grę</button>
+    </div>
+</div>
+
