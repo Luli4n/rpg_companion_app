@@ -29,6 +29,17 @@ h2{
     min-height: 100vh;
 }
 
+.menubutton{
+    width: 80px;
+    background-color: rgb(195, 167, 134);
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 1%;
+    margin: 1%;
+    float:right;
+    cursor: pointer;
+}
+
 .centraldiv{
     margin: auto;
 }
