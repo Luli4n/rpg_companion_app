@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { BrowsingGameTemplatesComponent } from './browsing-game-templates/browsing-game-templates.component';
 import { WaitingRoomComponent } from './waiting-room/waiting-room.component';
+import {ScrollingModule} from '@angular/cdk/scrolling';
 
 @NgModule({
   declarations: [
@@ -23,12 +24,13 @@ import { WaitingRoomComponent } from './waiting-room/waiting-room.component';
     LoginComponent,
     RegisterComponent,
     BrowsingGameTemplatesComponent,
-    WaitingRoomComponent
+    WaitingRoomComponent,
   ],
   imports: [
     BrowserModule,
     NgbModule,
     FormsModule,
+    ScrollingModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: 'admin.panel', component: UserPanelComponent },
@@ -39,6 +41,7 @@ import { WaitingRoomComponent } from './waiting-room/waiting-room.component';
       { path: 'create.game', component: CreatingGameTemplateComponent },
       { path: 'game.panel', component: ManagementDuringGameComponent },
       { path: 'waiting.room', component: WaitingRoomComponent },
+
     ])
   ],
   providers: [],

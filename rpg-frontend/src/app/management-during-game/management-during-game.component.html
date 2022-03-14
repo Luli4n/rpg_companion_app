@@ -16,10 +16,10 @@
                         <label class="allcategory" for="allmusic">Dodaj</label>
                     </div>
                 </div>
-                <div class="slider mt-1">
-                    <div *ngFor="let elem of elems">
-                        <div class="elemdiv">{{elem.name}}</div>
-                    </div>
+                <div class="slider mt-1 item-scroller">
+                        <cdk-virtual-scroll-viewport orientation="horizontal" itemSize="100" class="item-viewport">
+                          <div *cdkVirtualFor="let elem of elems" class="scroller-item">{{elem.name}}</div>
+                        </cdk-virtual-scroll-viewport>
                 </div>
             </div>
             <div class="settingtab border-top-0">
